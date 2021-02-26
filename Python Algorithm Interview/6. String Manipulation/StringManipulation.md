@@ -51,6 +51,6 @@ strs = strs.lower()
 strs = re.sub('[^a-z0-9]', '', s)
 ```
 
-### [Answer 3] C 구현
+### [Answer 4] C 구현
 + 문자열을 저장하는 char 포인터를 이용함
 + 속도 가장 빠름
