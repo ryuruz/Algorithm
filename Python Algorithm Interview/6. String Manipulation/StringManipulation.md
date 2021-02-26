@@ -44,7 +44,7 @@ while strs(len) > 1:
 ### [Answer 3] 슬라이싱 사용
 
 + isalnum()으로 일일이 문자를 확인하지 않고 한 번에 영숫자(Alphanumeric)만 걸러내도록 정규식 처리
-+ [정규식 관련 정리](../../python-grammer/정규표현식.md)
++ [정규식 관련 정리](https://github.com/ryuruz/Algorithm/blob/main/Python%20Grammer/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D.md)
 
 ```python
 strs = strs.lower()
