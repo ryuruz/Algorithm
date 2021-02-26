@@ -40,7 +40,7 @@ while strs(len) > 1:
         retrun False
 ```
 
-### [Answer 3] 슬라이싱 사용
+### [Answer 3] 정규식 & 슬라이싱 사용
 
 + isalnum()으로 일일이 문자를 확인하지 않고 한 번에 영숫자(Alphanumeric)만 걸러내도록 정규식 처리
 + [정규식 관련 정리](https://github.com/ryuruz/Algorithm/blob/main/Python%20Grammer/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D.md)
@@ -48,6 +48,13 @@ while strs(len) > 1:
 ```python
 strs = strs.lower()
 strs = re.sub('[^a-z0-9]', '', s)
+```
+
++ 문자열 슬라이싱 
+
+```python
+#원래 문자열과 뒤집은 문자열이 같은지 확인
+return s == s[::-1]
 ```
 
 ### [Answer 4] C 구현
