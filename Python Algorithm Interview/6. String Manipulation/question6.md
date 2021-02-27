@@ -1,0 +1,28 @@
+# LeetCode 5. Longest Palindrome Substring
+가장 긴 팰린드롬 부분 문자열을 출력하라
+
+### [Answer 1] 중앙을 중심으로 확장하는 풀이
+
+투 포인터를 이용하여, 중앙을 중심으로 확장하는 형태의 풀이
+
+ex) babad
+
+글자수가 홀수인 팰린드롬을 판별하기 위해 세 칸의 포인터 이동 ☐☐☐ → : bab, aba, bad
+
+글자수가 짝수인 팰린드롬을 판별하기 위해 두 칸의 포인터 이동 ☐☐ → : ba, ab, ba, ad
+
++ 먼저 예외 처리를 진행한다.
+
+```python
+if len(s) < 2 or s == s[::-1]:
+  return s
+```
+
++ expand() : 
+
+```python
+for i in range(0, len(s)-1):
+  result = max(result, expand(s, i, i+1), expand(s, i, i+2), key - len)
+
+return result
+```
