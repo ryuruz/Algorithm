@@ -2,7 +2,7 @@ def longestPalindrome(self, s):
   def expand(left: int, right: int): 
     while left >= 0 and right <= len(s) and s[left] == s[right - 1]:
       left -= 1
-      right -= 1
+      right += 1
     return s[left+1:right-1]
   
   if len(s) < 2 or s == s[::-1]:
