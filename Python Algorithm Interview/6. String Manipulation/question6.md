@@ -18,11 +18,17 @@ if len(s) < 2 or s == s[::-1]:
   return s
 ```
 
-+ expand() : 
++ expand() 함수를 정의하여, 두 포인터가 팰린드롬 여부를 판별하면서 우측으로 이동하도록 구현
 
 ```python
+def expand(left: int, right: int): 
+  while left >= 0 and right <= len(s) and s[left] == s[right - 1]:
+    left -= 1
+    right -= 1
+  return s[left+1:right-1]
+```
+```python  
 for i in range(0, len(s)-1):
-  result = max(result, expand(s, i, i+1), expand(s, i, i+2), key - len)
-
+  result = max(result, expand(s, i, i+1), expand(s, i, i+2), key = len)
 return result
 ```
