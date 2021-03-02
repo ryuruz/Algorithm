@@ -11,7 +11,7 @@
 문자로 구성된 로그가 숫자 로그보다 앞에 와야 하므로, 문자와 숫자를 구분해야 한다.
 ```python
 # 숫자 로그는 digits에, 문자 로그는 letters에 추가
-if log.split()[1].isdigit():
+if log.split()[1].isdigit(): # 각 로그에서 식별자[0] 다음인 원소[1]를 기준으로 판별
   digits.append(log)
 else:
   letters.append(log)
