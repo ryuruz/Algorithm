@@ -12,7 +12,7 @@ output: 1->1->2->3->4->4
 
 ```python
 def mergeTwolists(self, l1, l2):
-  if (not l1) or (l2 and (l1.val > l2.val)): l1이 빈 리스트가 아니거나 
+  if (not l1) or (l2 and (l1.val > l2.val)):
     l1, l2 = l2, l1
   if l1:
     l1.next = self.mergeTwoLists(l1.next, l2)
