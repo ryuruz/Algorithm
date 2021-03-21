@@ -17,7 +17,7 @@ for char in S:
         freqs[char] += 1
 
 ```
-### 2. 보석 빈도 합산
+#### 2. 보석 빈도 합산
 ```python
 for char in J:
     if char in freqs:
