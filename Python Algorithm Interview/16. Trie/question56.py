@@ -57,5 +57,3 @@ def startsWith(self, prefix):
   return True
 ```
 
-#### 3. 딕셔너리 이용
-+ self.children을 default.dict()으로 선언하여 
